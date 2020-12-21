@@ -49,12 +49,12 @@ h2 {
   
 
 #beef-title {
-  background-color: green;
+  background-color: MediumSeaGreen;
   color: white;
 }
 
 #sushi-title {
-  background-color: violet;
+  background-color: Violet;
 }
 
 p {
@@ -64,18 +64,6 @@ p {
 
 /* --------DESKTOP VERSION ------------ */
 @media screen and (min-width:992px){
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        float: left;
-    }
-    .col-lg-4 {
-        width: 33.33%;
-
-    }
-    .col-lg-6 {
-        width: 50%;
-    }
-    .col-lg-12 {
-        width: 100%;
     }
   section {
       /* This is to substract the margin from the width of the section */
@@ -85,20 +73,7 @@ p {
 
 /* --------TABLET VERSION ------------ */
 @media screen and (min-width:768px) and (max-width:991px){
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        float: left;
-    }
-    .col-md-4 {
-        width: 33.33%;
-    }
-    .col-md-6 {
-        width: 50%;
-    }
-    .col-md-12 {
-        width: 100%;
-    }
-{
-  .chicken-section, .beef-section{ 
+      .chicken-section, .beef-section{ 
       /* This is to substract the margin from the width of the section */
       width: calc(50% - 20px); 
   }
