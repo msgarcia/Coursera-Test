@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia", cursive, sans-serif
+}
+
+h1 {
+  
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.container {
+  float: left;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  display: block;
+  float: left;
+  border: 5px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: Tomato;
+}
+
+h2 {
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border: 3px solid black;
+  margin: 0px;
+  /* padding: 5px 30px 5px 30px; */
+  font-size: 1.25em;
+}
+
+#chicken-title {
+  background-color: DodgerBlue;
+  
+
+#beef-title {
+  background-color: green;
+  color: white;
+}
+
+#sushi-title {
+  background-color: violet;
+}
+
+p {
+  position: relative;
+  top: 20px;
+}
+
+/* --------DESKTOP VERSION ------------ */
+@media screen and (min-width:992px){
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+  section {
+      /* This is to substract the margin from the width of the section */
+      width: calc(33.33% - 20px);
+  }
+}
+
+/* --------TABLET VERSION ------------ */
+@media screen and (min-width:768px) and (max-width:991px){
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+{
+  .chicken-section, .beef-section{ 
+      /* This is to substract the margin from the width of the section */
+      width: calc(50% - 20px); 
+  }
+  .sushi-section {
+      /* This is to substract the margin from the width of the section */
+      width: calc(100% - 20px);
+  }
+}
+
+/* --------MOBILE VERSION ------------ */
+@media screen and (max-width: 767px){
+  section{
+      /* This is to substract the margin from the width of the section */
+      width: calc(100% - 20px)
+  }
+}
