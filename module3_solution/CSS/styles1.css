@@ -90,6 +90,11 @@ body {
   background-color: #555;
 }
 
+<p
+border: 3px solid black; 
+box-sizing: border-box;
+/p>
+
 /* END OF BACK TO TOP */
 
 
